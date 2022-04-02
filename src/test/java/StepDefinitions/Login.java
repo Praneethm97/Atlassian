@@ -70,6 +70,5 @@ public class Login extends Util {
     public void add_input_payload_with_file(String string) throws Exception {
         request = given().spec(requestSpecification()).header("X-Atlassian-Token", "no-check").pathParam("Key", issueid).header("Content-Type", "multipart/form-data").cookie("JSESSIONID", value).multiPart(new File(string));
     }
-    // to commit
 
 }
