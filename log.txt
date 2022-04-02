@@ -1,0 +1,240 @@
+Request method:	POST
+Request URI:	http://localhost:8080/rest/auth/1/session
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "Soumya",
+    "password": "simh@chary"
+}
+HTTP/1.1 200 
+X-AREQUESTID: 1236x228x1
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: atlassian.xsrf.token=BWZ0-J8TD-IOXL-HMN7_61041afce0c191a994da967b23e38d1280ebbd95_lout; Path=/
+X-AUSERNAME: anonymous
+Set-Cookie: JSESSIONID=C7A228E17C0EE079982E489AEBD5062E; Path=/; HttpOnly
+X-Seraph-LoginReason: OK
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Sat, 02 Apr 2022 15:06:40 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "session": {
+        "name": "JSESSIONID",
+        "value": "C7A228E17C0EE079982E489AEBD5062E"
+    },
+    "loginInfo": {
+        "failedLoginCount": 5,
+        "loginCount": 63,
+        "lastFailedLoginTime": "2022-04-02T18:32:25.697+0530",
+        "previousLoginTime": "2022-04-02T20:31:13.757+0530"
+    }
+}
+Request method:	POST
+Request URI:	http://localhost:8080/rest/api/2/issue
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		JSESSIONID=C7A228E17C0EE079982E489AEBD5062E
+Multiparts:		<none>
+Body:
+{
+    "fields": {
+        "project": {
+            "Key": "RSA",
+            "id": "10000"
+        },
+        "summary": "Out of balance in SA",
+        "environment": "UAT",
+        "description": "return + txn discount OOB reject in SA",
+        "issuetype": {
+            "name": "Bug"
+        }
+    }
+}
+HTTP/1.1 201 
+X-AREQUESTID: 1236x229x1
+X-ASESSIONID: uw4i4z
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=BWZ0-J8TD-IOXL-HMN7_c8eea6d54241ac5c75ca861f993328333b0779fc_lin; Path=/
+X-AUSERNAME: Soumya
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Sat, 02 Apr 2022 15:06:40 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "id": "10202",
+    "key": "RSA-25",
+    "self": "http://localhost:8080/rest/api/2/issue/10202"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/rest/api/2/issue/RSA-25/comment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	Key=RSA-25
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		JSESSIONID=C7A228E17C0EE079982E489AEBD5062E
+Multiparts:		<none>
+Body:
+{
+    "body": "This issue is a showstopper\nit should be resole in UAT-1.24.32\n@soumya communicate with rajesh to solve this issue"
+}
+HTTP/1.1 201 
+X-AREQUESTID: 1236x230x1
+X-ASESSIONID: uw4i4z
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=BWZ0-J8TD-IOXL-HMN7_c10dcce35d349a03cfea6cfdc1c659d5182d9fa0_lin; Path=/
+X-AUSERNAME: Soumya
+Location: http://localhost:8080/rest/api/2/issue/10202/comment/10102
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Sat, 02 Apr 2022 15:06:41 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "self": "http://localhost:8080/rest/api/2/issue/10202/comment/10102",
+    "id": "10102",
+    "author": {
+        "self": "http://localhost:8080/rest/api/2/user?username=Soumya",
+        "name": "Soumya",
+        "key": "JIRAUSER10000",
+        "emailAddress": "Soumya210697@gmail.com",
+        "avatarUrls": {
+            "48x48": "https://www.gravatar.com/avatar/ee66342f6c11654f1b8ff7f6371598e4?d=mm&s=48",
+            "24x24": "https://www.gravatar.com/avatar/ee66342f6c11654f1b8ff7f6371598e4?d=mm&s=24",
+            "16x16": "https://www.gravatar.com/avatar/ee66342f6c11654f1b8ff7f6371598e4?d=mm&s=16",
+            "32x32": "https://www.gravatar.com/avatar/ee66342f6c11654f1b8ff7f6371598e4?d=mm&s=32"
+        },
+        "displayName": "Soumya210697@gmail.com",
+        "active": true,
+        "timeZone": "Asia/Calcutta"
+    },
+    "body": "This issue is a showstopper\nit should be resole in UAT-1.24.32\n@soumya communicate with rajesh to solve this issue",
+    "updateAuthor": {
+        "self": "http://localhost:8080/rest/api/2/user?username=Soumya",
+        "name": "Soumya",
+        "key": "JIRAUSER10000",
+        "emailAddress": "Soumya210697@gmail.com",
+        "avatarUrls": {
+            "48x48": "https://www.gravatar.com/avatar/ee66342f6c11654f1b8ff7f6371598e4?d=mm&s=48",
+            "24x24": "https://www.gravatar.com/avatar/ee66342f6c11654f1b8ff7f6371598e4?d=mm&s=24",
+            "16x16": "https://www.gravatar.com/avatar/ee66342f6c11654f1b8ff7f6371598e4?d=mm&s=16",
+            "32x32": "https://www.gravatar.com/avatar/ee66342f6c11654f1b8ff7f6371598e4?d=mm&s=32"
+        },
+        "displayName": "Soumya210697@gmail.com",
+        "active": true,
+        "timeZone": "Asia/Calcutta"
+    },
+    "created": "2022-04-02T20:36:41.427+0530",
+    "updated": "2022-04-02T20:36:41.427+0530"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/rest/api/2/issue/RSA-25/attachments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	Key=RSA-25
+Headers:		X-Atlassian-Token=no-check
+				Accept=*/*
+				Content-Type=multipart/form-data
+Cookies:		JSESSIONID=C7A228E17C0EE079982E489AEBD5062E
+Multiparts:		------------
+				Content-Disposition: form-data; name = file; filename = Screenshot 2022-02-07 213200.png
+				Content-Type: application/octet-stream
+
+				C:\Users\Praneeth\Downloads\Screenshot 2022-02-07 213200.png
+Body:			<none>
+HTTP/1.1 200 
+X-AREQUESTID: 1236x231x1
+X-ASESSIONID: uw4i4z
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=BWZ0-J8TD-IOXL-HMN7_474c5fdf077fb4c74cbfd5e80c0e885db8b6d83d_lin; Path=/
+X-AUSERNAME: Soumya
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Sat, 02 Apr 2022 15:06:41 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+[
+    {
+        "self": "http://localhost:8080/rest/api/2/attachment/10102",
+        "id": "10102",
+        "filename": "Screenshot 2022-02-07 213200.png",
+        "author": {
+            "self": "http://localhost:8080/rest/api/2/user?username=Soumya",
+            "name": "Soumya",
+            "key": "JIRAUSER10000",
+            "emailAddress": "Soumya210697@gmail.com",
+            "avatarUrls": {
+                "48x48": "https://www.gravatar.com/avatar/ee66342f6c11654f1b8ff7f6371598e4?d=mm&s=48",
+                "24x24": "https://www.gravatar.com/avatar/ee66342f6c11654f1b8ff7f6371598e4?d=mm&s=24",
+                "16x16": "https://www.gravatar.com/avatar/ee66342f6c11654f1b8ff7f6371598e4?d=mm&s=16",
+                "32x32": "https://www.gravatar.com/avatar/ee66342f6c11654f1b8ff7f6371598e4?d=mm&s=32"
+            },
+            "displayName": "Soumya210697@gmail.com",
+            "active": true,
+            "timeZone": "Asia/Calcutta"
+        },
+        "created": "2022-04-02T20:36:41.677+0530",
+        "size": 721583,
+        "mimeType": "image/png",
+        "content": "http://localhost:8080/secure/attachment/10102/Screenshot+2022-02-07+213200.png",
+        "thumbnail": "http://localhost:8080/secure/thumbnail/10102/_thumb_10102.png"
+    }
+]

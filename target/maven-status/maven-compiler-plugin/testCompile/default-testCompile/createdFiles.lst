@@ -1,0 +1,5 @@
+Resources\Util.class
+Resources\Resources.class
+StepDefinitions\Login.class
+com\atlassian\jira\TestRunner.class
+Resources\Data.class

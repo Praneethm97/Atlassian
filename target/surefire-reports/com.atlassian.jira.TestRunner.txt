@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.atlassian.jira.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.786 s - in com.atlassian.jira.TestRunner
